@@ -12,4 +12,14 @@ else
       # mkfs.ext4 -L Boot /dev/$1'3'
       echo -e 'Formatando SWAP - /dev/'$1'5 - linux swap\n'
       # mkswap /dev/$1'5'
+      echo -e 'Montando os volumes\n'
+      mount /dev/$1'3' /mnt
+      mkdir /mnt/boot
+      mount /dev/$1'2' /mnt/boot
+      mkdir /mnt/boot/efi
+      mount /dev/$1'1' /mnt/boot/efi
+      mkdir /mnt/home
+      mount /dev/$1'4' /mnt/home
+      swapon /dev/$1'5'
+      mount | grep /mnt
 fi
