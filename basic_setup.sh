@@ -36,3 +36,25 @@ systemctl enable NetworkManager && systemctl enable sshd
 echo -e '\nConfigurando o GRUB com thema'
 
 grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=arch_grub --recheck
+
+sed -i s/quiet/quiet nvme_load=YES/g /etc/default/grub
+sed -i s/GRUB_GFXMODE=auto/GRUB_GFXMODE=1920x1080,auto/g /etc/default/grub
+sed -i s/quiet/quiet nvme_load=YES/g /etc/default/grub
+sed -i s/#GRUB_DISABLE_OS_PROBER=false/GRUB_DISABLE_OS_PROBER=false/g /etc/default/grub
+
+echo GRUB_THEME="/usr/share/grub/themes/sagittarius-uw/theme.txt" >> /etc/default/grub
+
+mkdir -p /usr/share/grub/themes/sagittarius-uw
+
+cp -rv ./sagittarius-uw/* /usr/share/grub/themes/sagittarius-uw/
+
+grub-mkconfig -o /boot/grub/grub.cfg
+
+echo -e '\nDefinindo os parâmetros do SSHD\n'
+
+sed -i 's/#Port 22/Port 3389/g' /etc/ssh/sshd_config
+sed -i 's/#AddressFamily any/AddressFamily inet/g' /etc/ssh/sshd_config
+
+echo -e 'basic_setup executado' > create_fs.txt
+
+echo -e '\nSetup básico concluído...\n'
