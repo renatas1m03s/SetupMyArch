@@ -22,4 +22,5 @@ else
       mount /dev/$1'4' /mnt/home
       swapon /dev/$1'5'
       mount | grep /mnt
+      swapon --show
 fi
