@@ -20,7 +20,7 @@ cp -rv ./* /mnt/home/SetupMyArch
 
 echo -e '\nExecutando o chroot\n'
 
+arch-chroot /mnt sh /home/SetupMyArch/end_intel_base.sh
+
 arch-chroot /mnt
 
-cd /home/SetupMyArch
-echo -e 'intel_base executado' > intel_base.txt
