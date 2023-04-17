@@ -23,4 +23,5 @@ else
       swapon /dev/$1'5'
       mount | grep /mnt
       swapon --show
+      echo -e 'create_fs executado' > create_fs.txt
 fi
