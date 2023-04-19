@@ -26,6 +26,9 @@ useradd -m -g users -G wheel -s /usr/bin/fish renata && passwd renata
 echo 'renata ALL=(ALL) ALL' | sudo EDITOR='tee -a' visudo
 cat /etc/sudoers
 
+sudo groupadd --system libvirt
+sudo usermod renata -aG libvirt
+
 echo -e '\nInstalando os pacotes básicos e habilitando o NetworkManager e sshd\n'
 
 pacman -Sy --noconfirm dosfstools os-prober mtools networkmanager dialog sudo

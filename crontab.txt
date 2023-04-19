@@ -1,0 +1,3 @@
+0 2 * * * /mnt/Backup/backup.sh
+*/10 * * * * /home/renata/SystemInfo/systeminfo.sh
+*/20 * * * * /home/renata/SystemInfo/fast-test.sh
