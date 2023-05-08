@@ -8,11 +8,11 @@ sudo pacman -Sy --noconfirm bluez bluez-utils blueman conky
 
 sudo pacman -Sy --noconfirm xorg sddm plasma packagekit-qt5 gnome-disk-utility konsole
 
-sudo pacman -Sy --noconfirm okular dolphin konsole ark spectacle gwenview geany kcalc
+sudo pacman -Sy --noconfirm okular dolphin konsole ark spectacle gwenview geany kcalc openconnect networkmanager-openconnect
 
 sudo pacman -Sy --noconfirm ffmpeg smplayer kio kio-extras ffmpegthumbs kdegraphics-thumbnailers
 
-sudo pacman -Sy --noconfirm kimageformats qt5-imageformats kdesdk-thumbnailers neofetch networkmanager-pptp 
+sudo pacman -Sy --noconfirm kimageformats qt5-imageformats kdesdk-thumbnailers neofetch  
 
 yay -Sy --noconfirm resvg raw-thumbnailer google-chrome snapd
 

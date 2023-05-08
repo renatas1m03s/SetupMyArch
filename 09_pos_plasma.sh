@@ -4,11 +4,11 @@ yay -Sy --noconfirm plasma5-applets-virtual-desktop-bar-git
 
 sudo mkdir -v /usr/share/plasma/desktoptheme/Utterly-Round
 
-cp -v ./Utterly-Round-Desktop.tar.xz /usr/share/plasma/desktoptheme/Utterly-Round/
+sudo cp -v ./Utterly-Round-Desktop.tar.xz /usr/share/plasma/desktoptheme/Utterly-Round/
 
 cd /usr/share/plasma/desktoptheme/Utterly-Round
 
-tar -xvf ./Utterly-Round-Desktop.tar.xz
+sudo tar -xvf ./Utterly-Round-Desktop.tar.xz
 
 cd /home/SetupMyArch
 
@@ -16,10 +16,6 @@ sudo systemctl enable --now bluetooth
 sudo systemctl enable --now cronie
 
 cp -v /home/SetupMyArch/functions/* /home/renata/.config/fish/functions/
-
-curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
-omf install lambda
-omf theme lambda
 
 pip3 install pysimplegui pyperclip
 sudo pacman -Sy --noconfirm xsel tk
@@ -41,4 +37,6 @@ cp -rv /mnt/Backup/Home/.local/share/icons/* ~/.local/share/icons
 sudo curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp
 sudo chmod a+rx /usr/local/bin/yt-dlp
 
+echo "Após acabar executar:\nomf install lambda && omf theme lambda"
 
+curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
