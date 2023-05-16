@@ -1,4 +1,4 @@
- #!/bin/bash
+#!/bin/bash
 
 echo -e '\nFormatando Boot, Root e SWAP - Assumindo o esquema de 5 partições - EFI, Boot, Root, Home e SWAP\n'
 

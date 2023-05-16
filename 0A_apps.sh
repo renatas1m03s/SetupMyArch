@@ -1,4 +1,4 @@
- #!/bin/bash
+#!/bin/bash
 
 yay -Sy --noconfirm timeshift openrgb-git microsoft-edge-stable-bin teams steam-native-runtime protonup-qt
 

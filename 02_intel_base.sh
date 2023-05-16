@@ -1,4 +1,4 @@
- #!/bin/bash
+#!/bin/bash
 
 echo -e '\nInstalando o sistema base INTEL - linux e linux-zen\n'
 

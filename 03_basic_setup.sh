@@ -52,7 +52,7 @@ echo GRUB_THEME="/usr/share/grub/themes/sagittarius-uw/theme.txt" >> /etc/defaul
 
 mkdir -p /usr/share/grub/themes/sagittarius-uw
 
-cp -rv ./sagittarius-uw/* /usr/share/grub/themes/sagittarius-uw/aQO
+cp -rv ./sagittarius-uw/* /usr/share/grub/themes/sagittarius-uw/
 
 grub-mkconfig -o /boot/grub/grub.cfg
 

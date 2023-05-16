@@ -1,6 +1,6 @@
- #!/bin/bash
+#!/bin/bash
 
-sudo snap install fast && sleep 03 && sudo snap install fast
+#sudo snap install fast && sleep 03 && sudo snap install fast
 
 sudo sensors-detect --auto
 
