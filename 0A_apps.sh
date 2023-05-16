@@ -1,6 +1,6 @@
  #!/bin/bash
 
-yay -Sy --noconfirm timeshift openrgb-git microsoft-edge-stable-bin
+yay -Sy --noconfirm timeshift openrgb-git microsoft-edge-stable-bin teams steam-native-runtime protonup-qt
 
 sudo pacman -Sy --noconfirm avidemux-qt gimp kdenlive remmina obs-studio darktable ddclient wine lutris telegram-desktop onlyoffice-bin
 

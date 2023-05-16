@@ -37,6 +37,6 @@ cp -rv /mnt/Backup/Home/.local/share/icons/* ~/.local/share/icons
 sudo curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp
 sudo chmod a+rx /usr/local/bin/yt-dlp
 
-echo "Após acabar executar:\nomf install lambda && omf theme lambda"
+#echo "Após acabar executar:\nomf install lambda && omf theme lambda"
 
-curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
+#curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish

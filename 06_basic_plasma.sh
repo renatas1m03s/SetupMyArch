@@ -18,6 +18,8 @@ yay -Sy --noconfirm resvg raw-thumbnailer google-chrome snapd
 
 yay -Sy pamac-aur
 
+yay -Sy --noconfirm update-grub pamac-tray-icon-plasma
+
 sudo systemctl enable --now snapd.socket
 sudo ln -s /var/lib/snapd/snap /snap
 

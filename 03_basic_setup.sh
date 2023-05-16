@@ -1,4 +1,8 @@
- #!/bin/bash
+#!/bin/bash
+
+echo -e "\nConfigurando o reflector...\n"
+
+reflector -l 10 --sort rate --save /etc/pacman.d/mirrorlist
 
 echo -e '\nConfigurando timezone e locales\n'
 
@@ -40,16 +44,15 @@ echo -e '\nConfigurando o GRUB com thema'
 
 grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=arch_grub --recheck
 
-sed -i s/quiet/quiet nvme_load=YES/g /etc/default/grub
-sed -i s/GRUB_GFXMODE=auto/GRUB_GFXMODE=1920x1080,auto/g /etc/default/grub
-sed -i s/quiet/quiet nvme_load=YES/g /etc/default/grub
-sed -i s/#GRUB_DISABLE_OS_PROBER=false/GRUB_DISABLE_OS_PROBER=false/g /etc/default/grub
+sed -i 's/quiet/quiet nvme_load=YES/g' /etc/default/grub
+sed -i 's/GRUB_GFXMODE=auto/GRUB_GFXMODE=2560x1080,auto/g' /etc/default/grub
+sed -i 's/#GRUB_DISABLE_OS_PROBER=false/GRUB_DISABLE_OS_PROBER=false/g' /etc/default/grub
 
 echo GRUB_THEME="/usr/share/grub/themes/sagittarius-uw/theme.txt" >> /etc/default/grub
 
 mkdir -p /usr/share/grub/themes/sagittarius-uw
 
-cp -rv ./sagittarius-uw/* /usr/share/grub/themes/sagittarius-uw/
+cp -rv ./sagittarius-uw/* /usr/share/grub/themes/sagittarius-uw/aQO
 
 grub-mkconfig -o /boot/grub/grub.cfg
 
