@@ -1,4 +1,4 @@
- #!/bin/bash
+#!/bin/bash
 
 sudo pacman -Sy --noconfirm pipewire lib32-pipewire wireplumber pipewire-alsa pipewire-pulse 
 
