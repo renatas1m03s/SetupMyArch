@@ -1,4 +1,4 @@
- #!/bin/bash
+#!/bin/bash
 
 yay -Sy --noconfirm plasma5-applets-virtual-desktop-bar-git
 
