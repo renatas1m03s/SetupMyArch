@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo pacman -Sy --noconfirm pipewire lib32-pipewire wireplumber pipewire-alsa pipewire-pulse 
+sudo pacman -Sy --noconfirm wireplumber pipewire-alsa pipewire-pulse lib32-pipewire
 
 sudo pacman -Sy --noconfirm network-manager-applet cronie inetutils dnsutils python-pip
 
@@ -12,7 +12,7 @@ sudo pacman -Sy --noconfirm okular dolphin konsole ark spectacle gwenview geany 
 
 sudo pacman -Sy --noconfirm ffmpeg smplayer kio kio-extras ffmpegthumbs kdegraphics-thumbnailers
 
-sudo pacman -Sy --noconfirm kimageformats qt5-imageformats kdesdk-thumbnailers neofetch  
+sudo pacman -Sy --noconfirm kimageformats qt5-imageformats kdesdk-thumbnailers neofetch openvpn
 
 yay -Sy --noconfirm resvg raw-thumbnailer google-chrome snapd
 

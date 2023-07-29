@@ -2,7 +2,7 @@
 
 echo -e '\nInstalando o sistema base INTEL - linux e linux-zen\n'
 
-pacstrap /mnt base linux linux-firmware linux-headers linux-zen linux-zen-headers dkms base-devel reflector
+pacstrap /mnt base linux linux-firmware linux-headers linux-zen linux-zen-headers dkms base-devel reflector btrfs-progs
 
 echo -e '\nGerando o FSTAB\n'
 
