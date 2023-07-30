@@ -1,6 +1,6 @@
 #!/bin/bash
 
-yay -Sy timeshift openrgb-git microsoft-edge-stable-bin teams steam-native-runtime protonup-qt
+yay -Sy timeshift openrgb-git microsoft-edge-stable-bin teams steam-native-runtime protonup-qt gamescope-plus retroarch-git
 
 sudo pacman -Sy --noconfirm avidemux-qt gimp kdenlive remmina obs-studio darktable ddclient wine lutris telegram-desktop onlyoffice-bin
 
