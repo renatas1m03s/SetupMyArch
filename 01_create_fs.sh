@@ -22,7 +22,7 @@ else
       mount /dev/$1'1' /mnt/boot/efi
       mkdir /mnt/home
       mount /dev/$1'5' /mnt/home
-      swapon /dev/$1'4'
+      swapon /dev/$1'3'
       mount | grep /mnt
       swapon --show
       echo -e 'create_fs executado' > create_fs.log
