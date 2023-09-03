@@ -15,14 +15,14 @@ else
       echo -e 'Formatando Home - /dev/'$1'5 - ext4\n'
       mkfs.ext4 -L Home /dev/$1'5'
       echo -e 'Montando os volumes\n'
-      mount /dev/$1'3' /mnt
+      mount /dev/$1'4' /mnt
       mkdir /mnt/boot
       mount /dev/$1'2' /mnt/boot
       mkdir /mnt/boot/efi
       mount /dev/$1'1' /mnt/boot/efi
       mkdir /mnt/home
-      mount /dev/$1'4' /mnt/home
-      swapon /dev/$1'5'
+      mount /dev/$1'5' /mnt/home
+      swapon /dev/$1'4'
       mount | grep /mnt
       swapon --show
       echo -e 'create_fs executado' > create_fs.log
